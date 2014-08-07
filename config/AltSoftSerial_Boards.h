@@ -53,6 +53,24 @@
  //#define OUTPUT_COMPARE_A_PIN		16 // transmit
  //#define OUTPUT_COMPARE_B_PIN		15 // unusable PWM
  //#define OUTPUT_COMPARE_C_PIN		14 // unusable PWM
+ 
+ 
+ // NMX Controller
+//
+#elif defined(__AVR_AT90USB1287__) || defined(__AVR_AT90USB647__) //&& defined(CORE_TEENSY)
+
+ //#define ALTSS_USE_TIMER1
+ //#define INPUT_CAPTURE_PIN		 28 // receive
+ //#define OUTPUT_COMPARE_A_PIN		13 // transmit
+ //#define OUTPUT_COMPARE_B_PIN		26 // unusable PWM
+ //#define OUTPUT_COMPARE_C_PIN		27 // unusable PWM
+
+ #define ALTSS_USE_TIMER3
+ #define INPUT_CAPTURE_PIN		23//C7//17 // receive
+ #define OUTPUT_COMPARE_A_PIN		22//C6//16 // transmit
+ #define OUTPUT_COMPARE_B_PIN		15 // unusable PWM
+ #define OUTPUT_COMPARE_C_PIN		14 // unusable PWM
+ 
 
 
 // Teensy 3.0 & 3.1
